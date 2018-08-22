@@ -35,7 +35,6 @@ class PostsShow extends Component {
                 <div>&nbsp;</div>
                 <div>
                     <div className="awl">
-                        <div className="">{post.post_title}</div>
                         <div className="">{post.post_text}</div>
                         <div className=""><img src={post.post_img} /></div>
                     </div>
