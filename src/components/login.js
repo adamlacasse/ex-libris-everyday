@@ -13,7 +13,7 @@ class LoginForm extends React.Component {
     render() {
         return (
         <div>
-            <div className="bg-everyday">Everyday.</div>
+            <div className="bg-login">Everyday.</div>
             <form className="fixedForm" onSubmit={this.handleSignIn.bind(this)}>
                 <h1>Log in</h1>
                 <input type="text" ref="username" placeholder="enter your username" /><br />

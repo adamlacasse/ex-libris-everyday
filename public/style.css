@@ -1,20 +1,11 @@
 
-                        /*
-  Oh Hello!
-
-  These are some base styles so that our tutorial looks good.
-
-  Let's go through the important bits real quick
-*/
 :root {
   --yellow: rgb(255, 255, 255);
   --black: #272727;
 }
 
 html {
-  /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
-  /* A system font stack so things load nice and quick! */
   font-family: 'IBM Plex Mono', monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   font-weight: 100;
   font-size: 10px;
@@ -24,11 +15,6 @@ html {
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
-/*
-  WAT IS THIS?!
-  We inherit box-sizing: border-box; from our <html> selector
-  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
-*/
 *,
 *:before,
 *:after {
@@ -65,14 +51,12 @@ h6 {
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   font-family: 'IBM Plex Mono', monospace;
-  font-weight: 700;
+  font-weight: 100;
   font-size: 10px;
   color: var(--black);
 
 }
-/* Each item in our grid will contain numbers */
 .item {
-  /* We center the contents of these items. You can also do this with flexbox too! */
   display: grid;
   justify-content: left;
   align-items: left;
@@ -85,7 +69,7 @@ h6 {
 }
 
 .item p {
-  margin: 0 0 5px 0;
+  span: 100%;
   color: #fff;
   font-weight: 700;
 
@@ -112,23 +96,6 @@ font-size: 10px;
 
 }
 
-.hero {
-  grid-area: hero;
-  min-height: 400px;
-  background: white url(images/taco.jpg);
-  background-size: cover;
-  background-position: bottom right;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-}
-
-.hero > * {
-  background: RED;
-  padding: 5px;
-}
 
 
 @media (max-width: 700px) {
@@ -136,7 +103,6 @@ font-size: 10px;
     grid-template-areas:
       "hero hero"
   }
-  /* About */
   .about {
     grid-template-columns: 1fr;
   }
@@ -172,7 +138,7 @@ w3-theme {
   -webkit-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
   cursor: pointer;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 
 }
 .btn, .btn-large, .btn-small, .btn-floating, .btn-large, .btn-small, .btn-flat {
@@ -189,7 +155,6 @@ w3-theme {
   display: inline-block;
   height: 36px;
   line-height: 36px;
-  padding: 0 16px;
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
@@ -199,11 +164,11 @@ w3-theme {
 
 .bg-everyday {
   font-weight: 100;
-  font-size: 600px;
+  font-size: 450px;
   z-index: -1;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   word-wrap: break-word;
@@ -215,7 +180,6 @@ w3-theme {
 
 .gallery {
   display: grid;
-  grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   position: relative;
 
@@ -229,11 +193,11 @@ w3-theme {
 
  .image-date {
   position: absolute;
-  left: 16px;
   color: white;
   font-size: 24px;
   font-weight: 100;
   z-index: 2;
+  padding: 20px;
  }
 
  .href {
@@ -259,4 +223,32 @@ w3-theme {
 .btn:active {
   color: red;
   background-color: white;
+}
+
+.bg-login {
+  font-weight: 100;
+  font-size: 450px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  word-wrap: break-word;
+  line-height: .75;
+  color: black;
+  background-image: url("/08_14_18.jpg"),
+
+
+}
+
+.highlightme { 
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+  opacity: 0.75;
+
+}
+
+.fixedForm{
+  position: fixed;
+  width: 100%;
 }
