@@ -252,3 +252,8 @@ w3-theme {
   position: fixed;
   width: 100%;
 }
+
+.awl {
+  font-size: 25px;
+  color: white;
+}
