@@ -37,6 +37,7 @@ class PostsIndex extends Component {
                         {this.renderPosts()}
                     </div>
                 </div>
+                <Link to="/login" className="awl"><i className="small material-icons">lock_open</i></Link>
             </div>
         );
     }
