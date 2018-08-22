@@ -34,10 +34,10 @@ class PostsShow extends Component {
                 </button>
                 <div>&nbsp;</div>
                 <div>
-                    <div className="top">
-                        <div className="item">{post.post_title}</div>
-                        <div className="item">{post.post_text}</div>
-                        <div className="gallery"><img src={post.post_img} /></div>
+                    <div className="awl">
+                        <div className="">{post.post_title}</div>
+                        <div className="">{post.post_text}</div>
+                        <div className=""><img src={post.post_img} /></div>
                     </div>
                 </div>
             </div>
