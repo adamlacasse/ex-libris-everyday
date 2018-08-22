@@ -15,10 +15,10 @@ class LoginForm extends React.Component {
         <div>
             <div className="bg-login">Everyday.</div>
             <form className="fixedForm" onSubmit={this.handleSignIn.bind(this)}>
-                <div className="awl">Log in</div>
+                <div className="awl">A museum of the overlooked.</div>
                 <input type="text" ref="username" placeholder="enter your username" /><br />
                 <input type="password" ref="password" placeholder="enter your password" /><br />
-                <Link to="/" className="btn btn-danger">Submit</Link>
+                <Link to="/" className="btn btn-danger">Log In</Link>
             </form>
         </div>
         )
