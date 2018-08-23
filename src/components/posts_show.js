@@ -25,18 +25,21 @@ class PostsShow extends Component {
 
         return (
             <div>
-                <Link to="/" className="btn btn-primary"> Back To Index</Link>
-                <button
-                    className="btn btn-danger pull-xs-right"
-                    onClick={this.onDeleteClick.bind(this)}
-                >
-                    Delete Post
-                </button>
-                <div>&nbsp;</div>
-                <div>
-                    <div className="awl">
-                        <div className="">{post.post_text}</div>
-                        <div className=""><img src={post.post_img} /></div>
+                <div className="bg-login">Yesterday.</div>
+                <div className="fixedForm">
+                    <Link to="/" className="btn btn-primary"> Back To Index</Link>
+                    <button
+                        className="btn btn-danger pull-xs-right"
+                        onClick={this.onDeleteClick.bind(this)}
+                    >
+                        Delete Post
+                    </button>
+                    <div>&nbsp;</div>
+                    <div>
+                        <div className="awl">
+                            <div className="">{post.post_text}</div>
+                            <div className=""><img src={post.post_img} /></div>
+                        </div>
                     </div>
                 </div>
             </div>

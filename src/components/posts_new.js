@@ -35,7 +35,7 @@ class PostsNew extends Component {
 
         return (
             <div>
-                <div className="bg-everyday">Today.</div>
+                <div className="bg-login">Today.</div>
                 <form className="fixedForm" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                     <Field
                         label="Text"
