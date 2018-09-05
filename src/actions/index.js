@@ -9,8 +9,8 @@ export const DELETE_POST = 'delete_post'
 const ROOT_URL = /* 'https://everyday-rest.herokuapp.com/' */
 'https://awl-everyday-api.herokuapp.com'
 
-export function fetchPosts() {
-    const request = axios.get(`${ROOT_URL}/posts`);
+export async function fetchPosts() {
+    const request = await axios.get(`${ROOT_URL}/posts`);
 
     return {
         type: FETCH_POSTS,
@@ -28,8 +28,9 @@ export function createPost(values, callback) {
     }
 }
 
-export function fetchPost(id) {
-    const request = axios.get(`${ROOT_URL}/post`)
+export async function fetchPost(id) {
+    const request = await axios.get(`${ROOT_URL}/post/${id}`)
+    console.log(request);
 
     return {
         type: FETCH_POST,
